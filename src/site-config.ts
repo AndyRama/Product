@@ -6,7 +6,7 @@ export const SiteConfig = {
   appIcon: "/images/icon.png",
   company: {
     name: "Lemurian Agency Inc.",
-    address: "34 avenue des champ Elisée Paris",
+    address: "34 avenue des champ Elysée Paris",
   },
   brand: {
     primary: "#007291",
