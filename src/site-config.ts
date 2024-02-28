@@ -1,25 +1,25 @@
 export const SiteConfig = {
-  title: "Now.ts",
-  description: "A template description for Now.ts",
-  prodUrl: "https://nowts.app",
-  domain: "nowts.app",
+  title: "Product",
+  description: "A template description for Product",
+  prodUrl: "https://lemurian_agency.com",
+  domain: "andyramaroson.com",
   appIcon: "/images/icon.png",
   company: {
-    name: "NowTS Inc.",
-    address: "1234 Main St, New York, NY 10001",
+    name: "Lemurian Agency Inc.",
+    address: "34 avenue des champ Elisée Paris",
   },
   brand: {
     primary: "#007291",
   },
   email: {
-    from: "NowTS <contact@nowts.app>",
-    contact: "contact@nowts.app",
+    from: "Lemurian <contact@andyramaroson.com>",
+    contact: "contact@andyramaroson.com",
   },
   maker: {
-    image: "https://melvynx.com/images/me/twitter-en.jpg",
-    website: "https://melvynx.com",
-    twitter: "https://twitter.com/melvyn_me",
-    name: "Melvynx",
+    image: "https://andyrama.com/images/me/twitter-en.jpg",
+    website: "https://andyramaroson.com",
+    twitter: "https://twitter.com/andyrama",
+    name: "Andy R.",
   },
   auth: {
     password: false as boolean,
