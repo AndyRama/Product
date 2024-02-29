@@ -6,7 +6,7 @@ import { Hero } from "@/features/landing/Hero";
 import { LandingHeader } from "@/features/landing/LandingHeader";
 import { PainSection } from "@/features/landing/Pain";
 import { SectionDivider } from "@/features/landing/SectionDivider";
-import { StatsSection } from "@/features/landing/StatsSection";
+// import { StatsSection } from "@/features/landing/StatsSection";
 import { CTASectionCard } from "@/features/landing/cta/CTACardSection";
 import { CTAImageSection } from "@/features/landing/cta/CTAImageSection";
 import { CtaSection } from "@/features/landing/cta/CTASection";
@@ -25,7 +25,7 @@ export default function HomePage() {
 
       <Hero />
 
-      <StatsSection />
+      {/* <StatsSection /> */}
 
       <BentoGridSection />
 

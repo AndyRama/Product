@@ -12,37 +12,40 @@ type StatProps = {
 
 const stats: StatProps[] = [
   {
-    number: 476,
-    suffix: "K",
-    text: "Threads scheduled every month.",
+    number: 6,
+    suffix: "k",
+    text: "Projets achevés",
   },
   {
-    number: 1.44,
-    suffix: "K",
-    text: "Users that use our platform.",
+    number: 3,
+    suffix: "k",
+    text: "Années d'expérience.",
   },
   {
-    number: 1.5,
-    suffix: "M+",
-    text: "Interactions with posts created by our users.",
+    number: 3,
+    suffix: "k",
+    text: "cafés par jour.",
   },
   {
-    number: 192,
-    suffix: "K",
-    text: "Users impacted by our published posts.",
+    number: 4,
+    suffix: "k",
+    text: "clients.",
   },
 ];
 
 export function StatsSection() {
   return (
     <SectionLayout size="sm">
-      <div className="grid max-w-sm items-start gap-12 sm:grid-cols-2 md:-mx-5 md:max-w-none md:grid-cols-4 md:gap-0">
+      <div className=" grid max-w-sm items-start gap-8 sm:grid-cols-2 md:-mx-5 md:max-w-none md:grid-cols-4 md:gap-0">
         {stats.map((stat, index) => (
-          <div key={index} className="relative text-center md:px-5">
+          <div
+            key={index}
+            className="relative ml-10 w-[50] rounded-lg border-4 text-center md:px-5"
+          >
             <h4 className="mb-2 text-2xl font-bold tabular-nums md:text-3xl">
               <Counter from={0} to={stat.number} />
 
-              {stat.suffix}
+              {/* {stat.suffix} */}
             </h4>
             <p className="text-sm text-muted-foreground">{stat.text}</p>
           </div>

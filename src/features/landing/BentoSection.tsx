@@ -51,7 +51,7 @@ const Skeleton1 = () => {
       <motion.div className="flex flex-row items-start gap-2 rounded-2xl border border-border bg-background p-3">
         <img
           alt="avatar"
-          src="https://melvynx.com/_next/image?url=%2Fimages%2Fmy-face.png&w=828&q=75"
+          src="/images/AndyPhotoNoir&Blanc.jpeg"
           className="size-6 shrink-0 rounded-full"
         />
         <div>
@@ -162,14 +162,14 @@ const Skeleton4 = () => {
         variants={first}
         className="flex h-full w-1/3 flex-col items-center justify-center rounded-2xl border border-border bg-background p-4"
       >
-        <Typography variant="large">+123 followers</Typography>
+        <Typography variant="large">Fille-de-la-grace.com</Typography>
         <Typography variant={"muted"}>In the last 30 days</Typography>
         <Typography variant={"muted"} className="text-green-500">
           +12%
         </Typography>
       </motion.div>
       <motion.div className="flex h-full w-1/3 flex-col items-center justify-center rounded-2xl border border-border bg-background p-4">
-        <Typography variant="large">+1.4 M Views</Typography>
+        <Typography variant="large">VanilleB2B.com</Typography>
         <Typography variant={"muted"}>In the last 30 days</Typography>
         <Typography variant={"muted"} className="text-green-500">
           +21%
@@ -179,8 +179,7 @@ const Skeleton4 = () => {
         variants={second}
         className="flex h-full w-1/3 flex-col items-center justify-center rounded-2xl border border-border bg-background p-4"
       >
-        <Typography variant="large">1244 likes</Typography>
-        <Typography variant="large">766 replis</Typography>
+        <Typography variant="large">Marketplace.com</Typography>
         <Typography variant={"muted"}>In the last 30 days</Typography>
         <Typography variant={"muted"} className="text-green-500">
           +12%
@@ -227,7 +226,7 @@ const Skeleton5 = () => {
         className="flex flex-row items-start gap-2 rounded-2xl border border-border bg-background p-3"
       >
         <img
-          src="https://melvynx.com/_next/image?url=%2Fimages%2Fmy-face.png&w=828&q=75"
+          src="/images/AndyPhotoNoir&Blanc.jpeg"
           alt="avatar"
           height="100"
           width="100"
@@ -266,59 +265,111 @@ const Skeleton5 = () => {
 
 const items = [
   {
-    title: "AI Content Generation",
+    title: "Unlcoaching.com",
     description: (
       <span className="text-sm">
-        Experience the power of AI in generating unique content.
-      </span>
-    ),
-    header: <Skeleton1 />,
-    className: "md:col-span-1",
-    icon: <Sparkles size={20} />,
-  },
-  {
-    title: "Schedule with ease",
-    description: (
-      <span className="text-sm">
-        We help you schedule your threads with ease.
-      </span>
-    ),
-    header: <Skeleton2 />,
-    className: "md:col-span-1",
-    icon: <Calendar size={20} />,
-  },
-  {
-    title: "Calendar View",
-    description: (
-      <span className="text-sm">
-        See what you have planned for the day with our calendar view.
+        Réalisation d'un site vitrine avec un blog, et presentation activité
+        pour un coach sportif.
       </span>
     ),
     header: <Skeleton3 />,
     className: "md:col-span-1",
-    icon: <CalendarCheck size={20} />,
+    icon: <Sparkles size={20} />,
   },
   {
-    title: "Threads Analysis",
+    title: "Fille-de-la-grace.com",
     description: (
       <span className="text-sm">
-        Understand your threads with our powerful analytics.
+        Création d'un site vitrine pour mon activité de services et création de
+        site web .
       </span>
     ),
-    header: <Skeleton4 />,
-    className: "md:col-span-2",
-    icon: <BarChart3 size={20} />,
+    header: <Skeleton3 />,
+    className: "md:col-span-1",
+    icon: <Sparkles size={20} />,
+  },
+  {
+    title: "Lemurian-agency.com",
+    description: (
+      <span className="text-sm">
+        Réalisation d'une application de service et d'entre aide solidaire.
+      </span>
+    ),
+    header: <Skeleton3 />,
+    className: "md:col-span-1",
+    icon: <Sparkles size={20} />,
+  },
+  {
+    title: "Marketplace.com",
+    description: (
+      <span className="text-sm">
+        Application permettant à un coach sportif de créer, publier et vendre
+        ses pack personnalisés d'exercices.
+      </span>
+    ),
+    header: <Skeleton3 />,
+    className: "md:col-span-1",
+    icon: <Sparkles size={20} />,
   },
 
   {
-    title: "See what works",
+    title: "Vanille-B2B.com",
     description: (
       <span className="text-sm">
-        Understand the hype and trends with our powerful research tools.
+        Application permettant à un coach sportif de créer, publier et vendre
+        ses pack personnalisés d'exercices.
       </span>
     ),
-    header: <Skeleton5 />,
+    header: <Skeleton3 />,
     className: "md:col-span-1",
-    icon: <X className="size-4 text-neutral-500" />,
+    icon: <Sparkles size={20} />,
+  },
+  {
+    title: "Unlcoaching.app",
+    description: (
+      <span className="text-sm">
+        Application permettant à un coach sportif de créer, publier et vendre
+        ses pack personnalisés d'exercices.
+      </span>
+    ),
+    header: <Skeleton3 />,
+    className: "md:col-span-1",
+    icon: <Sparkles size={20} />,
+  },
+  {
+    title: "Acheapworld.com",
+    description: (
+      <span className="text-sm">
+        Application permettant à un coach sportif de créer, publier et vendre
+        ses pack personnalisés d'exercices.
+      </span>
+    ),
+    header: <Skeleton3 />,
+    className: "md:col-span-1",
+    icon: <Sparkles size={20} />,
+  },
+  {
+    title: "I-Doctor.com",
+    description: (
+      <span className="text-sm">
+        Application permettant à un coach sportif de créer, publier et vendre
+        ses pack personnalisés d'exercices.
+      </span>
+    ),
+    header: <Skeleton3 />,
+    className: "md:col-span-1",
+    icon: <Sparkles size={20} />,
+  },
+  {
+    title: "Andy'nb.com",
+    description: (
+      <span className="text-sm">
+        Application permettant à un coach sportif de créer, publier et vendre
+        ses pack personnalisés d'exercices.
+      </span>
+    ),
+    header: <Skeleton3 />,
+    className: "md:col-span-1",
+    icon: <Sparkles size={20} />,
   },
 ];
