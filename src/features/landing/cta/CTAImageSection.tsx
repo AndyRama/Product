@@ -8,7 +8,7 @@ export const CTAImageSection = () => {
     <div
       style={{
         backgroundImage:
-          "url(https://images.unsplash.com/photo-1707680639756-d37ea04572a9?q=80&w=2973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
+          "url(https://res.cloudinary.com/dbtnehfrf/image/upload/v1694941212/hb6tpx6jwwhtwqtyjfpy.png)",
         backgroundSize: "cover",
       }}
     >
@@ -20,13 +20,18 @@ export const CTAImageSection = () => {
           variant="h2"
           className="text-center text-5xl font-extrabold"
         >
-          Start getting a lot of followers
+          Vous souhaitez en savoir plus ?
         </Typography>
-        <Typography variant="base" className="text-center font-bold">
-          By posting every day with Threader !
+        <Typography variant="base" className="w-8/12 text-center font-bold">
+          Que ce soit pour une question, une demande de devis, une remarque :
+          n'hésitez pas à nous contacter via notre formulaire de contact. Je me
+          ferai un plaisir de revenir vers vous pour en discuter ensemble.
         </Typography>
-        <Link href="#pricing" className={buttonVariants({ size: "lg" })}>
-          Get started
+        <Link
+          href="https://calendly.com/lemurian-agency/30min"
+          className={buttonVariants({ size: "lg" })}
+        >
+          Discutons en !
         </Link>
       </SectionLayout>
     </div>

@@ -1,21 +1,12 @@
 import { EmailFormSection } from "@/features/email/EmailFormSection";
-import { BentoGridSection } from "@/features/landing/BentoSection";
+import CardDescription from "@/features/landing/CardDescription";
 import { FAQSection } from "@/features/landing/FAQSection";
-import { FeaturesSection } from "@/features/landing/FeatureSection";
 import { Hero } from "@/features/landing/Hero";
 import { LandingHeader } from "@/features/landing/LandingHeader";
-import { PainSection } from "@/features/landing/Pain";
 import { SectionDivider } from "@/features/landing/SectionDivider";
-// import { StatsSection } from "@/features/landing/StatsSection";
-import { CTASectionCard } from "@/features/landing/cta/CTACardSection";
 import { CTAImageSection } from "@/features/landing/cta/CTAImageSection";
-import { CtaSection } from "@/features/landing/cta/CTASection";
-import { Pricing } from "@/features/landing/pricing/PricingSection";
 import { ReviewGrid } from "@/features/landing/review/ReviewGrid";
-import { ReviewSingle } from "@/features/landing/review/ReviewSingle";
-import { ReviewTriple } from "@/features/landing/review/ReviewTriple";
 import { Footer } from "@/features/layout/Footer";
-import Image from "next/image";
 
 export default function HomePage() {
   return (
@@ -24,155 +15,10 @@ export default function HomePage() {
       <LandingHeader />
 
       <Hero />
-
-      {/* <StatsSection /> */}
-
-      <BentoGridSection />
-
-      <PainSection />
-
-      <SectionDivider />
-
-      <ReviewTriple
-        reviews={[
-          {
-            image: "https://i.pravatar.cc/300?u=a1",
-            name: "Sophie",
-            review: `Threader **has completely transformed the way I manage my social media** content. The ability to schedule posts and use AI for content suggestions has saved me hours each week.`,
-            role: "Digital Marketer",
-          },
-          {
-            image: "https://i.pravatar.cc/300?u=a2",
-            name: "Alex",
-            review: `Using Threader has significantly boosted my online engagement. **The analytics tool helps me understand what works**, allowing me to refine my strategy and grow my follower base.`,
-            role: "Social Media Influencer",
-          },
-          {
-            image: "https://i.pravatar.cc/300?u=a3",
-            name: "Jordan",
-            review: `The ease of scheduling and the AI-generated content features are game-changers. **Threader's user-friendly interface** makes it perfect for anyone looking to enhance their online presence.`,
-            role: "Entrepreneur",
-          },
-        ]}
-      />
-      <SectionDivider />
-
-      <ReviewSingle
-        image="https://i.pravatar.cc/300?u=5"
-        name="Michel"
-        review={`Threader **has completely transformed** the way I manage my social media content. The ability to schedule posts and use AI for content suggestions **has saved me hours each week.**`}
-        role="Digital Marketer"
-        compagnyImage="https://1000logos.net/wp-content/uploads/2017/03/McDonalds-Logo-2003.png"
-        key={1}
-      />
-
-      <FeaturesSection
-        features={[
-          {
-            badge: "⏰ Schedule",
-            title: "Schedule your post",
-            description: "Schedule your post on the Threader in a few clicks.",
-            component: (
-              <Image
-                src="/images/placeholder1.gif"
-                alt=""
-                width={200}
-                height={100}
-                className="h-auto w-full object-cover"
-              />
-            ),
-          },
-          {
-            badge: "📅 Calendar",
-            title: "See what you scheduled",
-            description:
-              "With the calendar view, you can see what you scheduled and when.",
-            component: (
-              <Image
-                src="/images/placeholder1.gif"
-                alt=""
-                width={200}
-                height={100}
-                className="h-auto w-full object-cover"
-              />
-            ),
-          },
-          {
-            badge: "👁️ Preview",
-            title: "Preview your post",
-            description:
-              "Preview your post before scheduling it to see how it will look like.",
-            component: (
-              <Image
-                src="/images/placeholder1.gif"
-                alt=""
-                width={200}
-                height={100}
-                className="h-auto w-full object-cover"
-              />
-            ),
-          },
-          {
-            badge: "🔄 Repost",
-            title: "Schedule repost",
-            description:
-              "Automatically repost your post after a certain amount of time.",
-            component: (
-              <Image
-                src="/images/placeholder1.gif"
-                alt=""
-                width={200}
-                height={100}
-                className="h-auto w-full object-cover"
-              />
-            ),
-          },
-        ]}
-      />
+      <CardDescription />
 
       <CTAImageSection />
-      <CTASectionCard />
-      <CtaSection />
-
-      <Pricing
-        cards={[
-          {
-            type: "monthly",
-            id: "Free",
-            title: "Threader Free",
-            subtitle: "Perfect for tiny creator",
-            price: 0,
-            currency: "USD",
-            features: [
-              "Scehdule 1 post in advance",
-              "See what you scheduled",
-              "Auto-repost your thread",
-            ],
-            cta: "Start now",
-            ctaSubtitle: "Free forever",
-            priceId: "",
-          },
-          {
-            isPopular: true,
-            type: "monthly",
-            id: "premium",
-            title: "Threader Premium",
-            subtitle: "Perfect for content creator",
-            price: 49,
-            barredPrice: 59,
-            currency: "USD",
-            features: [
-              "Schedule Infinite post in advance",
-              "See what you scheduled",
-              "Auto-repost your thread",
-              "Preview your post",
-            ],
-            cta: "Start 7 days trial",
-            ctaSubtitle: "Then $49/month",
-            priceId: "",
-          },
-        ]}
-      />
+      <SectionDivider />
       <FAQSection
         faq={[
           {
@@ -257,34 +103,6 @@ export default function HomePage() {
             review:
               "Auto-reposting with Threader is a feature I didn't know I needed. It's great for getting more mileage out of your best content without any extra effort.",
             role: "Freelancer",
-          },
-          {
-            image: "https://i.pravatar.cc/300?u=b7",
-            name: "Sophia",
-            review:
-              "Joining the Threader community has opened up networking opportunities with fellow content creators. It's more than just a tool; it's a platform for growth.",
-            role: "Influencer",
-          },
-          {
-            image: "https://i.pravatar.cc/300?u=b8",
-            name: "Elijah",
-            review:
-              "The calendar view in Threader helps me visualize my content strategy for the entire month. It's been a game changer for my planning process.",
-            role: "Strategist",
-          },
-          {
-            image: "https://i.pravatar.cc/300?u=b9",
-            name: "Charlotte",
-            review:
-              "I appreciate the flexibility in Threader's pricing plans. It's accessible for creators at any stage of their journey, from beginners to established influencers.",
-            role: "Entrepreneur",
-          },
-          {
-            image: "https://i.pravatar.cc/300?u=b10",
-            name: "James",
-            review:
-              "The customer support team at Threader is fantastic. They've been quick to respond and helpful with any questions I've had. Great service overall.",
-            role: "Customer",
           },
         ]}
       />

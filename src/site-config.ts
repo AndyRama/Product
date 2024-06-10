@@ -1,12 +1,12 @@
 export const SiteConfig = {
-  title: "Product",
+  title: "Andy Ramaroson",
   description: "A template description for Product",
   prodUrl: "https://lemurian_agency.com",
   domain: "andyramaroson.com",
-  appIcon: "/images/icon.png",
+  appIcon: "/images/logo4.jpg",
   company: {
     name: "Lemurian Agency Inc.",
-    address: "34 avenue des champ Elysée Paris",
+    address: "34 avenue des champ Elysée 75008 Paris",
   },
   brand: {
     primary: "#007291",
