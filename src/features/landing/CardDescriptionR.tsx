@@ -3,10 +3,13 @@
 import Image from "next/image";
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Typography } from "@/components/ui/typography";
 
-export const CardDescription = ({ className }: { className: string }) => {
-  const ref = useRef(null);
+type CardDescriptionRProps = {
+  className?: string;
+};
+
+const CardDescriptionR: React.FC<CardDescriptionRProps> = ({ className }) => {
+  const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start end", "end start"],
@@ -14,7 +17,7 @@ export const CardDescription = ({ className }: { className: string }) => {
 
   const imgScroll1 = useTransform(scrollYProgress, [0, 1], ["10%", "-10%"]);
 
-  const cardDescriptionContent = {
+  const cardDescriptionRContent = {
     heading: {
       title: "À propos de moi",
       subTitle: "quelques mots",
@@ -32,7 +35,7 @@ export const CardDescription = ({ className }: { className: string }) => {
     <section className={`${className}`} ref={ref}>
       <div className="container mx-auto px-4">
         <div className="mb-15 relative z-[5] mx-auto mt-10 text-center md:mt-0 lg:mb-12 lg:max-w-xl">
-          {cardDescriptionContent.heading.subTitle && (
+          {cardDescriptionRContent.heading.subTitle && (
             <motion.span
               initial={{ opacity: 0, y: 20 }}
               whileInView={{
@@ -46,11 +49,11 @@ export const CardDescription = ({ className }: { className: string }) => {
               viewport={{ once: true }}
               className="mb-2 inline-block text-[12.5px] uppercase tracking-[3px] text-gray-500"
             >
-              {cardDescriptionContent.heading.subTitle}
+              {cardDescriptionRContent.heading.subTitle}
             </motion.span>
           )}
 
-          {cardDescriptionContent.heading.title && (
+          {cardDescriptionRContent.heading.title && (
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{
@@ -62,10 +65,9 @@ export const CardDescription = ({ className }: { className: string }) => {
                 },
               }}
               viewport={{ once: true }}
+              className="text-2xl lg:text-4xl"
             >
-              <Typography variant="h2">
-                {cardDescriptionContent.heading.title}
-              </Typography>
+              {cardDescriptionRContent.heading.title}
             </motion.h2>
           )}
         </div>
@@ -88,7 +90,7 @@ export const CardDescription = ({ className }: { className: string }) => {
                 className="relative z-[2] bg-cover bg-center"
               >
                 <Image
-                  src={cardDescriptionContent.content.img}
+                  src={cardDescriptionRContent.content.img}
                   className="!h-[400px] !w-full rounded-md object-cover object-center lg:max-w-2xl"
                   alt="Andy profile"
                   width={200}
@@ -98,9 +100,9 @@ export const CardDescription = ({ className }: { className: string }) => {
             </div>
 
             <div className="lg:w-6/12">
-              {cardDescriptionContent.content.descriptions.map(
+              {cardDescriptionRContent.content.descriptions.map(
                 (description, index) => (
-                  <motion.div
+                  <motion.p
                     key={index}
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{
@@ -112,14 +114,10 @@ export const CardDescription = ({ className }: { className: string }) => {
                       },
                     }}
                     viewport={{ once: true }}
+                    className="mb-7 text-xl text-gray-500"
                   >
-                    <Typography
-                      variant="p"
-                      className="mb-7 text-xl text-gray-500"
-                    >
-                      {description}
-                    </Typography>
-                  </motion.div>
+                    {description}
+                  </motion.p>
                 ),
               )}
             </div>
@@ -130,4 +128,4 @@ export const CardDescription = ({ className }: { className: string }) => {
   );
 };
 
-export default CardDescription;
+export default CardDescriptionR;

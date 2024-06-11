@@ -1,5 +1,6 @@
 import { EmailFormSection } from "@/features/email/EmailFormSection";
 import CardDescription from "@/features/landing/CardDescription";
+import CardDescriptionR from "@/features/landing/CardDescriptionR";
 import { FAQSection } from "@/features/landing/FAQSection";
 import { Hero } from "@/features/landing/Hero";
 import { LandingHeader } from "@/features/landing/LandingHeader";
@@ -15,9 +16,12 @@ export default function HomePage() {
       <LandingHeader />
 
       <Hero />
-      <CardDescription />
+      <CardDescription className="pb-20" />
 
       <CTAImageSection />
+
+      <CardDescriptionR className="mt-20" />
+
       <SectionDivider />
       <FAQSection
         faq={[
